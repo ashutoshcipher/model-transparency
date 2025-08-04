@@ -80,11 +80,7 @@ jobs:
       - name: Set up Hatch
         uses: pypa/hatch@257e27e51a6a5616ed08a39a408a21c35c9931bc
       - name: Register pytype problem matcher
-<<<<<<< ours
-        run: echo "::add-matcher::.github/pytype-problem-matcher.json"
-=======
         run: echo "::add-matcher::$GITHUB_WORKSPACE/.github/pytype-problem-matcher.json"
->>>>>>> theirs
       - name: Run type check
         run: hatch run type:check
 
