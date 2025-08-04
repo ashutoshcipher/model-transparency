@@ -1,0 +1,17 @@
+{
+  "problemMatcher": [
+    {
+      "owner": "pytype",
+      "pattern": [
+        {
+          "regexp": "^(.*?):(\\d+):(\\d+):\\s+error: (.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "message": 4,
+          "severity": "error"
+        }
+      ]
+    }
+  ]
+}
